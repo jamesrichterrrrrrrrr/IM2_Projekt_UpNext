@@ -30,8 +30,8 @@ Anna Locher 24C2 (anna.locher@stud.fhgr.ch) James Richter 24C2 (james.richter@st
 ---
 
 ## Benutzte Ressourcen und Prompts
-API: https://www.freepublicapis.com/mcu-countdown
-Für das Projekt wurde ausschliesslich ChatGPT verwendet.
+- API: https://www.freepublicapis.com/mcu-countdown
+- Für das Projekt wurde ausschliesslich ChatGPT verwendet.
 
 ### Prompt aus der Planungsphase:
 “Die Idee ist, dass User:innen durch die Projekte blättern können, beginnend mit demjenigen, das am zeitnähsten erscheint. Da wir die Filminfos über eine API ziehen (die jeweils unterschiedliche URLs verwendet), ist die Frage: Wie wirkt sich das auf die Verteilung unserer Seiten aus? Reicht ein One-Pager, bei der nur der Inhalt wechseln, oder sollte jedes Projekt eine eigene Seit/Unterseite bekommen?”
