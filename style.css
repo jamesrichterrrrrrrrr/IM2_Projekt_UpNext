@@ -1,0 +1,373 @@
+/* ===================== */
+/* 🎨 GENERAL STYLES     */
+/* ===================== */
+:root {
+  --brand-yellow: #f1ea27;
+  --brand-black: #222225;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Monda', Arial, sans-serif;
+  background-color: var(--brand-black);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 80px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+   top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 1rem;
+  padding-bottom: 24px;
+  background-color: #222225;
+  z-index: 1000;
+}
+
+/* ===================== */
+/* 🅰️ LOGO STYLES       */
+/* ===================== */
+.logo {
+  width: 101px;
+  position: fixed;
+  top: 24px;
+  left: 80px;
+  z-index: 1000;
+}
+
+.logo-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.logo path {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+.logo-button:hover .logo path {
+  fill: var(--brand-yellow);
+}
+
+/* ===================== */
+/* 🧱 LAYOUT             */
+/* ===================== */
+.main-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.movie-info {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ===================== */
+/* 🖼️ POSTER + NAV      */
+/* ===================== */
+.poster-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+}
+
+.nav-clickable-area {
+  flex: 1;
+  height: 300px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.nav-clickable-area:disabled,
+.nav-clickable-area.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+.arrow-icon.left {
+  transform: rotate(180deg);
+}
+
+.poster-wrapper {
+  flex-shrink: 0;
+  z-index: 3;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 32px;
+}
+
+#movie-poster {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 28px;
+  display: block;
+}
+
+/* ===================== */
+/* 📝 INFO PANEL         */
+/* ===================== */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+
+#toggle-info,
+.toggle-info-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 10px 22px 10px 32px;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--brand-yellow);
+  color: var(--brand-black);
+  font-family: 'Monda', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+#toggle-info.open,
+.toggle-info-button.open {
+  background-color: #ffffff;
+}
+
+.arrow-up-icon {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#toggle-info.open .arrow-up-icon,
+.toggle-info-button.open .arrow-up-icon {
+  transform: rotate(180deg);
+  filter: brightness(0);
+}
+
+.movie-info-panel {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  line-height: 1.4;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.movie-info-panel.open {
+  max-height: 800px;
+  opacity: 1;
+}
+
+.movie-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.release-date,
+.project-type {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.release-date {
+  color: #eee;
+}
+
+.project-type {
+  font-style: italic;
+  color: var(--brand-yellow);
+}
+
+.description {
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* ===================== */
+/* ⏱️ COUNTDOWN CLOCK   */
+/* ===================== */
+.countdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: 'Aldrich', sans-serif;
+  padding-bottom: 24px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  height: 120px;
+  width: fit-content;
+}
+
+.divider-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 32px;
+  height: 120px;
+}
+
+.time-value {
+  font-family: 'Martian Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 80px;
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+  min-width: 60px;
+}
+
+.time-label {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Aldrich', sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE         */
+/* ===================== */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .logo {
+    left: 32px;
+  }
+
+  #movie-poster {
+    width: 240px;
+  }
+
+
+  .nav-clickable-area {
+    height: 220px;
+  }
+
+  .arrow-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .time-box {
+    height: 64px;
+    gap: 12px;
+  }
+
+  .divider-box {
+    width: 16px;
+    height: 64px;
+  }
+
+  .time-value {
+    font-size: 44px;
+    min-width: 40px;
+  }
+
+  .time-label {
+    font-size: 12px;
+  }
+
+  .info-section {
+    max-width: 360px;
+    margin-top: 1rem;
+  }
+
+  #toggle-info,
+  .toggle-info-button {
+    font-size: 0.85rem;
+    padding: 8px 18px 8px 24px;
+  }
+
+  .arrow-up-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .movie-info-panel {
+    gap: 12px;
+  }
+
+  .movie-title {
+    font-size: 24px;
+  }
+
+  .release-date,
+  .project-type {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  body {
+    padding: 0 8px; /* prevents horizontal overflow */
+    padding-top: 80px;
+  }
+}
