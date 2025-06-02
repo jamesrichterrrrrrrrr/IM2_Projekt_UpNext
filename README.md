@@ -4,7 +4,7 @@
 
 ## Kurzbeschreibung des Projekts
 
-**"UpNext"** ist die perfekte Anlaufstelle für wahre MCU-Fans. Unser Projekt zeigt in Echtzeit, wie viele Tage, Stunden, Minuten und Sekunden noch bis zum nächsten Marvel-Film oder -Serie verbleiben. Zusätzlich werden wichtige Infos wie Release Date, Beschreibung und Veröffentlichungsart (Kino oder Disney+) übersichtlich dargestellt. So bleibt man immer bestens informiert und kann dem nächsten Abenteuer entgegenfiebern.
+**[UpNext](im2.jamesrichter.ch)** ist die perfekte Anlaufstelle für wahre MCU-Fans. Unser Projekt zeigt in Echtzeit, wie viele Tage, Stunden, Minuten und Sekunden noch bis zum nächsten Marvel-Film oder -Serie verbleiben. Zusätzlich werden wichtige Infos wie Release Date, Beschreibung und Veröffentlichungsart (Kino oder Disney+) übersichtlich dargestellt. So bleibt man immer bestens informiert und kann dem nächsten Abenteuer entgegenfiebern.
 
 ---
 
