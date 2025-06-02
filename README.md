@@ -23,7 +23,7 @@
 
 ---
 
-## benutzte Ressourcen und Prompts
+## Benutzte Ressourcen und Prompts
 Für das Projekt wurde ausschliesslich ChatGPT verwendet.
 
 ### Prompt aus der Planungsphase:
