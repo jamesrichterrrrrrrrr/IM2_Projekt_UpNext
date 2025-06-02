@@ -8,6 +8,12 @@
 
 ---
 
+## Gruppenmitglieder
+
+Anna Locher 24C2 (anna.locher@stud.fhgr.ch) James Richter 24C2 (james.richter@stud.fhgr.ch)
+
+---
+
 ## Learnings und Schwierigkeiten
 
 ### James
@@ -24,19 +30,20 @@
 ---
 
 ## Benutzte Ressourcen und Prompts
+API: https://www.freepublicapis.com/mcu-countdown
 Für das Projekt wurde ausschliesslich ChatGPT verwendet.
 
 ### Prompt aus der Planungsphase:
-“The idea is that users will be able to flip through the different upcoming projects, starting with the one releasing soonest. Since we’re pulling the movie info from an API (which uses different URLs), how does that factor into the page distribution? Will a single page, where only the content changes, cut it, or should each project have its own page?”
+“Die Idee ist, dass User:innen durch die Projekte blättern können, beginnend mit demjenigen, das am zeitnähsten erscheint. Da wir die Filminfos über eine API ziehen (die jeweils unterschiedliche URLs verwendet), ist die Frage: Wie wirkt sich das auf die Verteilung unserer Seiten aus? Reicht ein One-Pager, bei der nur der Inhalt wechseln, oder sollte jedes Projekt eine eigene Seit/Unterseite bekommen?”
 
 ### Prompt bei der Arbeit am Layout der Seite:
-"Okay nevermind, let's scratch that for now. Other issue: when switching to mobile width, the arrows aren't quite aligned perfectly vertically to the middle of the poster. How do I fix this? The height of the poster in the mobile version is 448px. Does that help?"
+"Wenn ich auf mobile Ansicht umschalte, sind die Pfeile nicht ganz mittig auf der Höhe des Posters ausgerichtet. Wie behebe ich das? Die Höhe des Posters in der mobilen Version ist 448 px, falls dir das hilft.
 
 ### Prompt beim Implementieren der API-Daten:
-"Okay, it's better but not quite there yet. Now it just says "TV Show", instead of "SERIES – ONLY ON DISNEY+". I tried to fix it but no luck... 
+"Hab einen Fehler entdeckt: jetzt steht da nur ‘TV Show’, statt ‘SERIES – ONLY ON DISNEY+’. Habs versucht zu korrigieren, hat nicht geklappt:
     if (data.type.toLowerCase() === "Movie") {
       typeEl.textContent = "MOVIE — ONLY IN THEATRES";
     } else if (data.type.toLowerCase() === "TV Show")..."
 
 ### Neuer Chat für die Aufräumarbeiten:
-"I'm working on a website, or rather I'm done working on it. I'd like to give you the code to just tidy it up a bit and make it easy to understand (with comments etc.). Should I send you HTML, then CSS and so on one at a time or all at once?"
+"Ich arbeite an einer Website, bzw bin fertig damit. Bitte räum mir den Code etwas auf, um ihn nachvollziehbarer zu machen, (z. B. mit Kommentaren usw.). Soll ich dir alles auf einmal schicken, oder lieber erst html, dann css usw.?"
