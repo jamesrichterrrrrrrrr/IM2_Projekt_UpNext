@@ -144,7 +144,7 @@ header {
 
 #movie-poster {
   width: 100%;
-  max-width: 400px;
+  width: 400px;
   border-radius: 28px;
   display: block;
 }
