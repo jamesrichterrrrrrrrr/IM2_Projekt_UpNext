@@ -25,7 +25,7 @@ Anna Locher 24C2 (anna.locher@stud.fhgr.ch) James Richter 24C2 (james.richter@st
 - JavaScript allg. immer noch etwas scary
 - Workflow mit KI hat sich stark verbessert, prompten geht viel besser
 - Solider Umgang mit Dev Mode in Figma
-- was ist wichtig und was ist einfach nur "nice to have"
+- was wichtig und was einfach nur "nice to have"
 
 ---
 

@@ -167,4 +167,3 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.classList.toggle("disabled", disableNext);
   }
 });
-
